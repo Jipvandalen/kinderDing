@@ -1,5 +1,7 @@
 const { app, BrowserView, BrowserWindow } = require('electron')
 const path = require('path')
+const ftp = require('ftp')
+const writeFile = require('fs')
 
 const createWindow = () => {
   const main = new BrowserWindow({
@@ -11,17 +13,11 @@ const createWindow = () => {
   })
 
   main.loadFile('index.html')
-	const sub = new BrowserWindow({ width: 300, height: 300, parent: main })
-
-	const view = new BrowserView()
-	sub.setBrowserView(view)
-	view.setBounds({ x: 0, y: 0, width: 300, height: 300 })
-	view.webContents.loadURL('https://electronjs.org')
 }
 
 app.whenReady().then(() => {
   createWindow()
-  
+
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })

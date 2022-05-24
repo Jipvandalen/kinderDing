@@ -1,0 +1,89 @@
+body {
+	background-image: url('/main.png');
+	background-repeat: norepeat;
+	background-attachement: scroll;
+	background-size: 100% 100%;
+	background-color: blue;
+	text-align:center;
+	font-family:"bahnschrift", "lucida console", "copperplate", "sans-serif", "courier new", "tahoma";
+	color: rgb(0, 0, 0);
+}
+
+.nav {
+	background-color: rgba(0, 0, 0, 0.6);
+	flex: 100%;
+	margin-right: 5px;
+	padding: 3px;
+	height: 30px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	font-size: auto;
+	color: white;
+}
+
+li {
+	float: left;
+	padding-le: 5%;
+	padding-rig: 5%;
+	width: 25%;
+} li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 5px 20px;
+	text-decoration: none;
+} li a:hover {
+	background-color: #111;
+	color: white;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+a:hover, a:active {
+	text-decoration: none;
+	color: grey;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 10px;
+	color: #FFF;
+	font-size: auto;
+}
+
+.intro {
+	flex: 7 3 0px;
+	text-align:justify;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	margin-top: 8px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.changelog {
+	flex: 3 7 0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 500px;
+	text-align:left;
+	font-size: 12.5px;
+	margin-left: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 8px;
+	margin-right: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+}

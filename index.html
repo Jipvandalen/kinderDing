@@ -2,15 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Login</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h1>Login</h1>
+    <form method="POST" id="login">
+      <label>Server</label>
+      <br>
+      <input type="text" name="server" required>
+      <br>
+      <label>Password</label>
+      <br>
+      <input type="password" name="password" required>
+      <br>
+      <br>
+      <button type="submit">Login</button>
+    </form>
+    <script src="index.js"></script>
   </body>
 </html>
