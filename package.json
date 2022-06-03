@@ -1,1 +1,1 @@
-{"name":"kinderding","version":"0.0.1","description":"O","main":"main.js","author":"I","license":"","devDependencies":{"electron":"^18.2.4"},"scripts":{"start":"electron ."},"dependencies":{"ftp":"^0.3.10"}}
+{"name":"kinderding","version":"0.0.1","description":"O","main":"main.js","author":"I","license":"","devDependencies":{"@electron-forge/cli":"^6.0.0-beta.63","electron":"^18.2.4"},"scripts":{"start":"electron ."},"dependencies":{"ftp":"^0.3.10"}}
