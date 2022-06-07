@@ -13,7 +13,7 @@ const createWindow = () => {
       }
   })
 
-  main.loadFile('index.html')
+  main.loadFile('login.html')
 }
 
 app.whenReady().then(() => {

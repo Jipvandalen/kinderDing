@@ -1,5 +1,6 @@
-//const ftp = require('ftp');
 const fs = require('fs');
+
+//if FTP config already exists, login automatically
 if (fs.existsSync('config/ftp.txt')){
   try {
     const data = fs.readFileSync('config/ftp.txt', 'utf8');
@@ -12,7 +13,6 @@ if (fs.existsSync('config/ftp.txt')){
   }
 }
 
-//form.addEventListener("submit", login);
 function login(ip = '', pass = '') {
   if (ip=='') {
   var ipElement = form.elements['server'];
@@ -40,10 +40,10 @@ ftp_client.on('ready', function() {
     if (!fs.existsSync('config')){
     fs.mkdirSync('config');
   }
-    stream.pipe(fs.createWriteStream('config/config-copy.txt', {flags: 'w'}));
+    stream.pipe(fs.createWriteStream('config/config.txt', {flags: 'w'}));
     //when done writing file, redirect to main page
     stream.on('finish', () => {
-      window.location.href = "main.html";;
+      window.location.href = "user.html";;
     });
   });
   });
