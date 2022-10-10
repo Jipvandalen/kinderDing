@@ -20,8 +20,8 @@ function login(ip = '', pass = '') {
   const ip = ipElement.value;
   const pass = passElement.value;
   console.log(ip);
+  console.log(pass);
 }
-  //moet functie voor ophalen config via ftp komen
   function get_config() {
     const FTPClient = require('ftp');
 let ftp_client = new FTPClient();
@@ -29,7 +29,7 @@ let ftpConfig = {
      host: ip,
      port: 21,
      user: 'user',
-     password: pass,
+     password: '123',
 }
 //create a connection to ftp server
 ftp_client.connect(ftpConfig);

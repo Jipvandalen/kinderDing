@@ -14,6 +14,11 @@ const createWindow = () => {
   })
 
   main.loadFile('login.html')
+
+  main.on("new-window", function(event, url) {
+  event.preventDefault();
+  shell.openExternal(url);
+});
 }
 
 app.whenReady().then(() => {

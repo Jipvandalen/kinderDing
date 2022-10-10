@@ -1,0 +1,3 @@
+shortcut urls|https://youtube.com/;https://netflix.com/;https://reggesteyn.magister.net/|
+shortcut names|YouTube;Netflix;Magister|
+shortcut colors|696969;84FE54;126578|

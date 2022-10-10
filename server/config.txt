@@ -1,3 +1,4 @@
+name:KinderDing:
 users:test0;test1;Jeep:
 colors:000000;696969;FF00CC:
-config:test0;test1;jeep:
+config:test0.txt;test1.txt;jeep.txt:
